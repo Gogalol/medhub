@@ -4,25 +4,17 @@ namespace App\Controller;
 
 use Core\View;
 use App\Controller\UserController;
+use App\Controller\AccessController;
 
 class HomeController
 {
     public function __construct()
     {
-        $result = false;
-
-        if ($_POST['email'])
-        {
-            $user = new UserController();
-            $result = $user->auth();
-        }
-
-        return $result;
+        if(!$_SESSION['sid']){header('Location: /');}
     }
 
     public function index()
     {
         View::render('pages/home/index.php');
     }
-
 }
