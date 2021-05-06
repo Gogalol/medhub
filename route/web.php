@@ -44,6 +44,9 @@ $router->add('account/update', ['controller' => 'AccountController', 'action' =>
 --------------------------------------------------------------------------
 */
 $router->add('accesses', ['controller' => 'AccessController', 'action' => 'index']);
+$router->add('user-access', ['controller' => 'AccessController', 'action' => 'index']);
+$router->add('doctor-access', ['controller' => 'AccessController', 'action' => 'index']);
+$router->add('admin-access', ['controller' => 'AccessController', 'action' => 'index']);
 $router->add('access/add', ['controller' => 'AccessController', 'action' => 'show']);
 $router->add('access/store', ['controller' => 'AccessController', 'action' => 'store']);
 $router->add('access/edit?{id}', ['controller' => 'AccessController', 'action' => 'edit']);

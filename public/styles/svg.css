@@ -3,14 +3,23 @@
     width: 24px;
     height: 24px;
 }
+.svg-entry {
+    fill: #555563;
+    width: 30px;
+    height: 30px;
+}
+.svg-entry:hover {
+    fill: black;
+    cursor: pointer;
+}
 .svg-access:hover {
     fill: black;
     cursor: pointer;
 }
 
 .svg-edit {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
 }
 
 .svg-delete {
